@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شروع تخمین | پیرامید</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .form-wrap{ max-width:640px; margin:0 auto; padding:56px 20px 90px; }
+  .form-card{ background:#fff; border:1px solid var(--border); border-radius: var(--radius-lg); padding:30px; box-shadow: var(--shadow-sm); }
+  .form-card h2{ font-size:20px; font-weight:800; margin-bottom:6px; }
+  .form-card > p{ color:var(--text-muted); font-size:14px; margin-bottom:26px; }
+  .form-field{ margin-bottom:18px; }
+  .form-field label{ display:block; font-size:13.5px; font-weight:600; margin-bottom:8px; }
+  .form-field input, .form-field select{
+    width:100%; padding:12px 14px; border-radius: var(--radius-sm);
+    border:1px solid var(--border); font-family:inherit; font-size:14px; background:var(--bg-soft);
+  }
+  .form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media(max-width:560px){ .form-grid{ grid-template-columns:1fr; } }
+  .form-note{ font-size:12.5px; color:var(--text-faint); margin-top:20px; text-align:center; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="پیرامید">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 4 L44 40 H4 Z" fill="#1c3f9e"/>
+        <path d="M24 4 L34 22 L14 22 Z" fill="#2f5fe0"/>
+        <path d="M24 14 L44 40 H30 L20 22 Z" fill="#6a8ff2"/>
+      </svg>
+    </a>
+    <nav><ul class="main-nav">
+      <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+      <li><a href="dashboard.html" class="nav-link">پیشخوان من</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="باز کردن منو">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a href="dashboard.html" class="user-pill">
+        <span class="avatar">ص</span>
+        <b>صادق کریمی</b>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="form-wrap">
+  <div class="form-card">
+    <h2>شروع تخمین کنکور</h2>
+    <p>گروه آزمایشی و درصد دروس خود را وارد کنید تا تراز و رتبه‌ی تخمینی محاسبه شود. (این فرم فعلا فقط نمای ظاهری است و به فرمول متصل نیست)</p>
+
+    <form onsubmit="return false;">
+      <div class="form-field">
+        <label>گروه آزمایشی</label>
+        <select>
+          <option>تجربی</option>
+          <option>ریاضی</option>
+          <option>انسانی</option>
+          <option>هنر</option>
+          <option>زبان</option>
+        </select>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-field">
+          <label>درصد ادبیات فارسی</label>
+          <input type="number" placeholder="مثلا ۷۵">
+        </div>
+        <div class="form-field">
+          <label>درصد عربی</label>
+          <input type="number" placeholder="مثلا ۶۰">
+        </div>
+        <div class="form-field">
+          <label>درصد زیست‌شناسی</label>
+          <input type="number" placeholder="مثلا ۸۰">
+        </div>
+        <div class="form-field">
+          <label>درصد شیمی</label>
+          <input type="number" placeholder="مثلا ۷۰">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-solid" style="width:100%;margin-top:10px;">مشاهده نتیجه</button>
+    </form>
+    <p class="form-note">با ادامه، از فرمول‌ها و داده‌های به‌روز پیرامید برای محاسبه‌ی تراز استفاده می‌شود.</p>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
