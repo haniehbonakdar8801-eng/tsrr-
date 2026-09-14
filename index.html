@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پیرامید | تخمین دقیق کنکور</title>
+<meta name="description" content="تخمین تراز، رتبه و انتخاب رشته کنکور با الگوریتم‌های دقیق و به‌روز پیرامید">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- =========================== هدر =========================== -->
+<header class="site-header">
+  <div class="container">
+
+    <a href="index.html" class="brand" aria-label="پیرامید">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 4 L44 40 H4 Z" fill="#1c3f9e"/>
+        <path d="M24 4 L34 22 L14 22 Z" fill="#2f5fe0"/>
+        <path d="M24 14 L44 40 H30 L20 22 Z" fill="#6a8ff2"/>
+      </svg>
+    </a>
+
+    <nav>
+      <ul class="main-nav">
+        <li class="has-dropdown">
+          <a href="#" class="nav-link">تخمین کنکور
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="#"><span class="dot"></span>تخمین تجربی</a>
+            <a href="#"><span class="dot"></span>تخمین کنکور ریاضی</a>
+         
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link">تخمین تراز سوابق
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="#"><span class="dot"></span>تراز سوابق تجربی</a>
+            <a href="#"><span class="dot"></span>تراز سوابق ریاضی</a>
+            <a href="#"><span class="dot"></span>تراز سوابق انسانی</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link">تخمین رتبه
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="#"><span class="dot"></span>تخمین رتبه کنکور</a>
+            <a href="#"><span class="dot"></span>تخمین رتبه سوابق</a>
+            <a href="#"><span class="dot"></span>تخمین رتبه کشوری</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link">انتخاب رشته
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="#"><span class="dot"></span>انتخاب رشته کنکور</a>
+            <a href="#"><span class="dot"></span>انتخاب رشته دانشگاه آزاد</a>
+            <a href="#"><span class="dot"></span>مشاوره انتخاب رشته</a>
+          </div>
+        </li>
+        <li><a href="#" class="nav-link">معدل‌گیری</a></li>
+        <li><a href="#" class="nav-link">ثبت نمره</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="باز کردن منو">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a href="dashboard.html" class="user-pill">
+        <span class="avatar">ص</span>
+        <b>صادق کریمی</b>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<!-- =========================== هیرو =========================== -->
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="hero-badge">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+      مورد اعتماد هزاران داوطلب
+    </span>
+    <h1>تخمین دقیق کنکور با پیرامید</h1>
+    <p>با استفاده از الگوریتم‌های دقیق و به‌روز، تراز، رتبه و انتخاب رشته‌ی خود را به سرعت تخمین بزنید.</p>
+    <div class="hero-cta">
+      <a href="input.html" class="btn btn-primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+        شروع تخمین
+      </a>
+      <a href="dashboard.html" class="btn btn-outline">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        پیشخوان من
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== چرا پیرامید =========================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">چرا پیرامید؟</span>
+      <h2>ابزاری مطمئن برای برنامه‌ریزی تحصیلی و انتخاب آینده‌ی شما</h2>
+      <p>داده‌های به‌روز، فرمول‌های دقیق و رابط کاربری ساده؛ همه در یک‌جا کنار هم.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12L3 7l9-5 9 5-9 5z"/></svg>
+        </div>
+        <h3>داده‌های به‌روز هر سال</h3>
+        <p>الگوریتم‌های تخمین بر اساس آخرین کارنامه‌ها و نتایج واقعی کنکور هر سال به‌روزرسانی می‌شوند.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon icon-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>نتیجه در چند ثانیه</h3>
+        <p>فقط کافی است درصدهای خود را وارد کنید تا بلافاصله تراز، رتبه و بازه‌ی احتمالی را ببینید.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon icon-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
+        </div>
+        <h3>دقت اثبات‌شده</h3>
+        <p>مقایسه‌ی مستمر با نتایج واقعی داوطلبان، دقت تخمین‌ها را سال به سال بالاتر برده است.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== خدمات ما =========================== -->
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">امکانات پیرامید</span>
+      <h2>خدمات ما</h2>
+      <p>مجموعه‌ی کامل از ابزارهای تخمین و برنامه‌ریزی کنکور</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon icon-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+        </div>
+        <h3>معدل‌گیری</h3>
+        <p>محاسبه‌ی دقیق معدل کل و تراز از سوابق تحصیلی</p>
+        <a href="#" class="service-link link-purple">استفاده کنید
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon icon-orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        </div>
+        <h3>انتخاب رشته</h3>
+        <p>انتخاب بهترین رشته و دانشگاه متناسب با رتبه</p>
+        <a href="#" class="service-link link-orange">استفاده کنید
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card is-featured">
+        <div class="service-icon icon-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+        </div>
+        <h3>تخمین سوابق</h3>
+        <p>تخمین تراز بر اساس سوابق تحصیلی</p>
+        <a href="#" class="service-link link-green">استفاده کنید
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+        </div>
+        <h3>تخمین کنکور</h3>
+        <p>تخمین تراز و رتبه بر اساس درصدهای کنکور</p>
+        <a href="#" class="service-link link-blue">استفاده کنید
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7-7 7M21 12H3"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================== روند کار =========================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">روند کار</span>
+      <h2>در سه گام ساده به نتیجه برسید</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">۱</div>
+        <h3>ثبت‌نام رایگان</h3>
+        <p>در چند ثانیه حساب کاربری خود را بسازید</p>
+      </div>
+      <div class="step">
+        <div class="step-num">۲</div>
+        <h3>وارد کردن درصدها</h3>
+        <p>درصد دروس یا سوابق تحصیلی را وارد کنید</p>
+      </div>
+      <div class="step">
+        <div class="step-num">۳</div>
+        <h3>مشاهده‌ی تراز و رتبه</h3>
+        <p>نتیجه را به‌صورت نمودار و عدد ببینید</p>
+      </div>
+      <div class="step">
+        <div class="step-num">۴</div>
+        <h3>انتخاب رشته</h3>
+        <p>بهترین رشته و دانشگاه را پیدا کنید</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== آمار =========================== -->
+<section class="section section-soft">
+  <div class="container">
+    <div class="stats-band">
+      <div class="stat"><b>+۸۵,۰۰۰</b><span>داوطلب ثبت‌نام‌شده</span></div>
+      <div class="stat"><b>۹۷٪</b><span>دقت تخمین تراز</span></div>
+      <div class="stat"><b>+۲۰</b><span>رشته و گروه آزمایشی</span></div>
+      <div class="stat"><b>+۵</b><span>سال داده‌ی کنکور</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== نظرات =========================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">نظر داوطلبان</span>
+      <h2>حرف کسانی که پیرامید را تجربه کرده‌اند</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <p>تخمین تراز پیرامید تقریبا با کارنامه‌ی نهایی من یکسان بود. برای انتخاب رشته خیلی کمکم کرد.</p>
+        <div class="testi-user">
+          <span class="avatar">م</span>
+          <div><b>محمد رضایی</b><span>رتبه ۴۵۰ تجربی</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <p>رابط کاربری ساده‌ای داره و گزارش تراز سوابق خیلی شفاف نشون داده می‌شه. پیشنهاد می‌کنم.</p>
+        <div class="testi-user">
+          <span class="avatar">ز</span>
+          <div><b>زهرا احمدی</b><span>رتبه ۱۲۰۰ انسانی</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.9-6.2 3.9 1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <p>ماژول انتخاب رشته دقیقا دانشگاه‌های قابل قبول رو بر اساس رتبه‌ام نشون داد. عالی بود.</p>
+        <div class="testi-user">
+          <span class="avatar">ع</span>
+          <div><b>علی محمدی</b><span>رتبه ۸۹۰ ریاضی</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== شروع کنید =========================== -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>همین حالا شروع کنید</h2>
+      <p>با ثبت‌نام رایگان، به تمام ابزارهای تخمین و برنامه‌ریزی پیرامید دسترسی پیدا کنید.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary">ثبت‌نام رایگان</a>
+        <a href="#" class="btn btn-outline">ورود به حساب کاربری</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== فوتر =========================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4 L44 40 H4 Z" fill="#6a8ff2"/>
+            <path d="M24 4 L34 22 L14 22 Z" fill="#2f5fe0"/>
+            <path d="M24 14 L44 40 H30 L20 22 Z" fill="#9ab2f6"/>
+          </svg>
+          <span>پیرامید</span>
+        </a>
+        <p>پیرامید مجموعه‌ای کامل از ابزارهای تخمین و برنامه‌ریزی کنکور است؛ تراز، رتبه و انتخاب رشته را با اطمینان بیشتری بسازید.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="تلگرام">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.5L2.7 10.9c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.9 5.7c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.2-2.1 4.6 3.4c.8.5 1.4.2 1.6-.8l3-14c.3-1.2-.4-1.7-1.2-1.4z"/></svg>
+          </a>
+          <a href="#" aria-label="اینستاگرام">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="واتساپ">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.6 14.3c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.7-2.8-1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.1.2-.2.3-.3.5-.2.2-.3.3-.5.5-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.2.1.8-.1 1.4z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>ابزارهای تخمین</h4>
+        <ul>
+          <li><a href="#">تخمین کنکور</a></li>
+          <li><a href="#">تخمین تراز سوابق</a></li>
+          <li><a href="#">تخمین رتبه</a></li>
+          <li><a href="#">انتخاب رشته</a></li>
+          <li><a href="#">معدل‌گیری</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>درباره پیرامید</h4>
+        <ul>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">وبلاگ آموزشی</a></li>
+          <li><a href="#">سوالات متداول</a></li>
+          <li><a href="#">تماس با ما</a></li>
+          <li><a href="#">همکاری با ما</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>پشتیبانی</h4>
+        <ul>
+          <li><a href="#">مرکز راهنمایی</a></li>
+          <li><a href="#">گزارش خطا</a></li>
+          <li><a href="#">قوانین و مقررات</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>عضویت در خبرنامه</h4>
+        <p>از به‌روزرسانی داده‌های کنکور و مطالب آموزشی جدید باخبر شوید.</p>
+        <form class="footer-form" onsubmit="return false;">
+          <input type="email" placeholder="ایمیل شما">
+          <button type="submit">عضویت</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© ۱۴۰۴ پیرامید — تمامی حقوق محفوظ است.</span>
+      <div class="footer-trust">
+        <span class="seal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <span class="legal-links">
+          <a href="#">قوانین</a>
+          <a href="#">حریم خصوصی</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
